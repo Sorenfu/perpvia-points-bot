@@ -1,1 +1,1 @@
-# Discord logging utilities
+# Logging utilities

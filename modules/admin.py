@@ -1,1 +1,1 @@
-# Admin points management
+# Admin commands placeholder
