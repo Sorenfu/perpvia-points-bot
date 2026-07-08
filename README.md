@@ -1,2 +1,4 @@
-Discord积分商城Bot V2.1
-Mee6负责等级，Bot监听Role变化并发放积分。
+Community OS Alpha 0.9.5 Full Test Package
+
+Purpose:
+Full path validation before Beta 1.0.

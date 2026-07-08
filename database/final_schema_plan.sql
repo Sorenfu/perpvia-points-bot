@@ -1,0 +1,11 @@
+-- unified schema plan
+-- users
+-- points
+-- rewards
+-- identities
+-- products
+-- orders
+-- tasks
+-- wallets
+-- ai_profiles
+-- audit_logs
