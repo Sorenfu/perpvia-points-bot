@@ -1,5 +1,5 @@
 # ============================================================
-# main.py - Discord Growth Bot v2 入口
+# main.py - Discord Growth Bot v2 Flat
 # ============================================================
 
 import os
@@ -14,10 +14,10 @@ from settings import DISCORD_GUILD_ID, SEED_PRODUCTS
 load_dotenv()
 
 EXTENSIONS = [
-    "cogs.points",
-    "cogs.shop",
-    "cogs.admin",
-    "cogs.events",
+    "points",
+    "shop",
+    "admin",
+    "events",
 ]
 
 
