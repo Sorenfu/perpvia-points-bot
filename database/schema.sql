@@ -1,1 +1,1 @@
--- Base schema
+-- PostgreSQL schema

@@ -1,0 +1,1 @@
+ALTER TABLE points_balance ADD COLUMN IF NOT EXISTS total_spent INT DEFAULT 0;
