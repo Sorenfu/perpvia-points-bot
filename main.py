@@ -18,9 +18,24 @@ class GrowthBot(discord.Client):
         self.tree = app_commands.CommandTree(self)
 
     async def setup_hook(self):
-        print("Initializing database...")
-        await db.init_pool()
+
+    await db.init_pool()
+
+    guild_id = os.environ.get("DISCORD_GUILD_ID")
+
+    if guild_id:
+        guild = discord.Object(id=int(guild_id))
+
+        self.tree.copy_global_to(guild=guild)
+
+        await self.tree.sync(guild=guild)
+
+        print(f"Commands synced to guild {guild_id}")
+
+    else:
         await self.tree.sync()
+
+        print("Global commands synced")
         print("Commands synced")
 
 
