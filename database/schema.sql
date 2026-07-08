@@ -1,1 +1,4 @@
--- Initial schema
+-- Phase 2 database schema
+-- points ledger
+-- daily checkin
+-- role rewards

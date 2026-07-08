@@ -1,1 +1,1 @@
-# Discord Growth Bot v2 Phase 1
+# Discord Growth Bot v2 Phase 2
