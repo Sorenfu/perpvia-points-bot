@@ -1,1 +1,1 @@
-# Logging module
+# Discord activity logging helpers
