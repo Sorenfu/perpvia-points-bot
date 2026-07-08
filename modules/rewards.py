@@ -1,1 +1,1 @@
-# Role reward system placeholder
+# Role reward module
