@@ -1,3 +1,7 @@
-Community OS Beta 1.0 Stable Full Deployment Package
+Community OS Beta 1.0.1 Discord Runtime
 
-Complete Railway/Github deployment structure.
+Fix:
+- Discord Client Runtime
+- Gateway connection
+- Slash command sync
+- Bot online status
