@@ -1,8 +1,14 @@
-Community OS Beta 1.0.5 Message Integration
+Community OS Beta 1.0.6 Full Business Integration
 
-Features:
-- Message reward
-- +1 Point
-- 60 second cooldown
-- Minimum 10 chars
-- Daily 50 points limit
+One-step integration package.
+
+Includes:
+Points
+Daily
+Message
+Invite
+Role Reward
+Shop
+Campaign
+Admin
+Analytics

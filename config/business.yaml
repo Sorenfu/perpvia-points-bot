@@ -1,11 +1,18 @@
 points:
- daily_reward:20
- daily_cooldown_hours:12
- message_reward:1
- message_cooldown_seconds:60
- message_min_length:10
- message_daily_limit:50
- invite_reward:20
- invite_require_checkin:true
+ daily: 20
+ daily_cooldown_hours: 12
+ message: 1
+ message_cooldown_seconds: 60
+ message_min_length: 10
+ message_daily_limit: 50
+ invite: 20
+ invite_require_checkin: true
+
+roles:
+ Pathfinder: 100
+ Trailblazer: 300
+ Momentum_Maker: 500
+ Via_Elite: 1000
+
 shop:
- usdt_to_points:1000
+ usdt_to_points: 1000
