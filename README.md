@@ -1,14 +1,8 @@
-Community OS Beta 1.0.6 Full Business Integration
+Community OS Beta 1.0.7 Runtime Merge
 
-One-step integration package.
-
-Includes:
-Points
-Daily
-Message
-Invite
-Role Reward
-Shop
-Campaign
-Admin
-Analytics
+First real runtime integration:
+- Discord client
+- Command sync
+- PostgreSQL
+- Point Engine
+- Daily flow
