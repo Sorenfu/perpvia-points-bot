@@ -1,12 +1,6 @@
-CREATE TABLE users(
-discord_id BIGINT PRIMARY KEY,
-points BIGINT DEFAULT 0
-);
-CREATE TABLE point_transactions(
+CREATE TABLE daily_checkins(
 id SERIAL PRIMARY KEY,
 user_id BIGINT,
-amount INT,
-source TEXT,
-reason TEXT,
+reward INT,
 created_at TIMESTAMP DEFAULT NOW()
 );
