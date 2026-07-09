@@ -3,10 +3,8 @@ import discord
 from discord import app_commands
 from dotenv import load_dotenv
 from commands.loader import load_commands
-from checks.startup import validate_env
 
 load_dotenv()
-validate_env()
 
 class CommunityOS(discord.Client):
     def __init__(self):
@@ -21,6 +19,7 @@ class CommunityOS(discord.Client):
 
     async def on_ready(self):
         guild=discord.Object(id=int(os.getenv('GUILD_ID')))
+        self.tree.copy_global_to(guild=guild)
         synced=await self.tree.sync(guild=guild)
         print('Discord Accepted Commands:',[c.name for c in synced])
         print('Command Count:',len(synced))

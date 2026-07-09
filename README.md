@@ -1,7 +1,6 @@
-Community OS Alpha 0.9.7.2 Lifecycle Fix
+Community OS Alpha 0.9.7.3 Command Register Fix
 
-Changes:
-- Move command sync to on_ready
-- Print Discord accepted commands
-- Verify command count
-- Remove aggressive command clearing
+Fix:
+- copy global commands to guild
+- sync guild commands
+- verify Discord accepted commands
