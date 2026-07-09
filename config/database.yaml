@@ -1,0 +1,4 @@
+database:
+  provider: postgresql
+points:
+  enabled: true

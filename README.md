@@ -1,6 +1,7 @@
-Community OS Beta 1.0.2 Command Registration Fix
+Community OS Beta 1.0.3 Point Core Integration
 
-Fixes:
-- Global command copy to guild
-- Guild command sync
-- Sync result logging
+Features:
+- PostgreSQL connection
+- Point engine
+- User balance
+- Transaction ledger
