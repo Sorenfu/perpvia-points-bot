@@ -1,4 +1,7 @@
-Community OS Alpha 0.9.5 Full Test Package
+Community OS Alpha 0.9.6 Configuration Patch
 
-Purpose:
-Full path validation before Beta 1.0.
+Includes:
+- Discord configuration
+- Role mapping
+- Command sync foundation
+- Railway variables template

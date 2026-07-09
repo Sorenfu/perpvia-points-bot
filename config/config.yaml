@@ -1,0 +1,26 @@
+discord:
+  guild_id: 1494573358887731232
+  application_id: 1519613062548553848
+
+roles:
+  wayfarer:
+    id: 1501816017716776980
+    reward: 0
+  pathfinder:
+    id: 1506518512179351612
+    reward: 100
+  trailblazer:
+    id: 1506518516592017418
+    reward: 300
+  momentum_maker:
+    id: 1506518516679839855
+    reward: 500
+  via_elite:
+    id: 1506518520660234323
+    reward: 1000
+
+features:
+  shop: true
+  rewards: true
+  web3: false
+  ai: true
