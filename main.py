@@ -3,7 +3,6 @@ import discord
 from discord import app_commands
 from dotenv import load_dotenv
 from commands.loader import load_commands
-from discord.sync import sync_debug
 from checks.startup import validate_env
 
 load_dotenv()
@@ -17,16 +16,15 @@ class CommunityOS(discord.Client):
         self.tree=app_commands.CommandTree(self)
 
     async def setup_hook(self):
-        print('Application ID:',self.application_id)
-        print('Guild ID:',os.getenv('GUILD_ID'))
         load_commands(self.tree)
-        print('Loaded:',[c.name for c in self.tree.get_commands()])
-        await sync_debug(self)
+        print('Loaded Commands:',[c.name for c in self.tree.get_commands()])
+
+    async def on_ready(self):
+        guild=discord.Object(id=int(os.getenv('GUILD_ID')))
+        synced=await self.tree.sync(guild=guild)
+        print('Discord Accepted Commands:',[c.name for c in synced])
+        print('Command Count:',len(synced))
+        print(f'System Ready: {self.user}')
 
 bot=CommunityOS()
-
-@bot.event
-async def on_ready():
-    print('System Ready:',bot.user)
-
-bot.run(os.environ['DISCORD_TOKEN'])
+bot.run(os.getenv('DISCORD_TOKEN'))
