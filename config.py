@@ -1,1 +1,0 @@
-POINTS_NAME = "PerpPoint"
