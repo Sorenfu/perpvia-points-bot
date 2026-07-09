@@ -1,6 +1,7 @@
-CREATE TABLE daily_checkins(
+CREATE TABLE message_rewards(
 id SERIAL PRIMARY KEY,
 user_id BIGINT,
-reward INT,
+amount INT,
+reward_date DATE DEFAULT CURRENT_DATE,
 created_at TIMESTAMP DEFAULT NOW()
 );

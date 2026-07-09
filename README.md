@@ -1,8 +1,8 @@
-Community OS Beta 1.0.4 Daily Integration
+Community OS Beta 1.0.5 Message Integration
 
 Features:
-- /daily
-- 12 hour cooldown
-- +20 points
-- Transaction integration
-- Daily records
+- Message reward
+- +1 Point
+- 60 second cooldown
+- Minimum 10 chars
+- Daily 50 points limit
