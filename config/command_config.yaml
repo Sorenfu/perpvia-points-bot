@@ -1,0 +1,4 @@
+commands:
+  balance: enabled
+  points: enabled
+  shop: enabled
