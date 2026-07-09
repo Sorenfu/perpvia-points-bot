@@ -1,0 +1,11 @@
+-- Beta 1.0 initialization
+-- users
+-- profiles
+-- points
+-- transactions
+-- products
+-- orders
+-- campaigns
+-- analytics
+-- ai_reports
+-- audit_logs
