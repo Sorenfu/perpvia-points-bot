@@ -1,6 +1,7 @@
-Community OS Alpha 0.9.6.1 Command Fix Patch
+Community OS Alpha 0.9.6.2 Command Loader Rewrite
 
-Fix:
-- Slash command sync
-- Balance compatibility
-- Points command registration
+Fixes:
+- command registration
+- guild sync
+- stale slash commands
+- startup command logging
