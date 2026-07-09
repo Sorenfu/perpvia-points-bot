@@ -1,4 +1,1 @@
-{
- "build":{"builder":"RAILPACK"},
- "deploy":{"startCommand":"python app/main.py"}
-}
+{"deploy":{"startCommand":"python main.py"}}
