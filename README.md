@@ -1,7 +1,6 @@
-Community OS Beta 1.0.1 Discord Runtime
+Community OS Beta 1.0.2 Command Registration Fix
 
-Fix:
-- Discord Client Runtime
-- Gateway connection
-- Slash command sync
-- Bot online status
+Fixes:
+- Global command copy to guild
+- Guild command sync
+- Sync result logging

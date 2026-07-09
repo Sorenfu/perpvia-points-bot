@@ -13,22 +13,23 @@ class CommunityOS(discord.Client):
         self.tree=app_commands.CommandTree(self)
 
     async def setup_hook(self):
-        print('Loading modules...')
-        await self.tree.sync(guild=discord.Object(id=int(os.getenv('GUILD_ID'))))
-        print('Commands synced')
+        print('Loading commands')
+
+    async def on_ready(self):
+        guild=discord.Object(id=int(os.getenv('GUILD_ID')))
+        self.tree.copy_global_to(guild=guild)
+        synced=await self.tree.sync(guild=guild)
+        print('Synced Commands:',[c.name for c in synced])
+        print('Command Count:',len(synced))
+        print(f'Discord Connected: {self.user}')
 
 bot=CommunityOS()
 
-@bot.event
-async def on_ready():
-    print(f'Discord Connected: {bot.user}')
-    print('System Ready')
-
-@bot.tree.command(name='balance',description='Check points')
+@bot.tree.command(name='balance',description='Check balance')
 async def balance(interaction):
     await interaction.response.send_message('Balance: 0 Points')
 
-@bot.tree.command(name='daily',description='Daily checkin')
+@bot.tree.command(name='daily',description='Daily reward')
 async def daily(interaction):
     await interaction.response.send_message('Daily +20 Points')
 
