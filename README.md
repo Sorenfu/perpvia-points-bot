@@ -1,7 +1,7 @@
-Community OS Alpha 0.9.7 Stable Bootstrap
+Community OS Alpha 0.9.7.1 Command Debug
 
-Changes:
-- Stable startup
-- Environment validation
-- Safer command sync
-- Railway deployment ready
+Purpose:
+- Diagnose Discord slash command visibility
+- Clear global commands
+- Sync guild commands
+- Print Application ID and Guild ID
