@@ -1,6 +1,6 @@
-Community OS Alpha 0.9.6.3 Clean Deployment
+Community OS Alpha 0.9.6.4 Railway Environment Fix
 
-Purpose:
-- Replace old deployment completely
-- Reset stale slash commands
-- Register balance points daily shop
+Fix:
+- discord.py dependency
+- app_commands import issue
+- Railway runtime compatibility
